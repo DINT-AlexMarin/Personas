@@ -43,9 +43,27 @@ namespace Personas
             ContenidoVentana = new UserControl1();
         }
 
+        private UserControl2 listaUsuarios;
+
+        public UserControl2 ListaUsuarios
+        {
+            get { return listaUsuarios; }
+            set { SetProperty(ref listaUsuarios, value); }
+        }
+
+        bool iniciada = false;
+
         public void CargarVentana2()
         {
-            ContenidoVentana = new UserControl2();
+            if (!iniciada)
+            {
+                iniciada = true;
+                ListaUsuarios = new UserControl2();
+                ContenidoVentana = ListaUsuarios;
+            } 
+            else
+                ContenidoVentana = ListaUsuarios;
+            
         }
     }
 }

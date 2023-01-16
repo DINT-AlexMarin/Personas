@@ -19,9 +19,18 @@ namespace Personas
             set { SetProperty(ref listaPersonas, value); }
         }
 
+        private Persona personaSeleccionada;
+
+        public Persona PersonaSeleccionada
+        {
+            get { return personaSeleccionada; }
+            set { personaSeleccionada = value; }
+        }
+
         public UserControl2VM()
         {
             ListaPersonas = Persona.GetSamples();
+            PersonaSeleccionada = null;
         }
     }
 }

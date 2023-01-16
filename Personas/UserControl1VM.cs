@@ -15,6 +15,9 @@ namespace Personas
 
         public RelayCommand CargarVentanaNacionalidad { get; }
 
+        
+
+
         private ObservableCollection<string> nacionalidades;
 
         public ObservableCollection<string> Nacionalidades
@@ -25,6 +28,7 @@ namespace Personas
 
         public UserControl1VM()
         {
+          
             servicio = new ServicioNavegacion();
             CargarVentanaNacionalidad = new RelayCommand(AbrirVentanaNacionalidad);
             Nacionalidades = new ObservableCollection<string>();
