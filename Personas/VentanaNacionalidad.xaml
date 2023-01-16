@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Personas"
         mc:Ignorable="d"
-        Title="Añadir Nacionalidad" Height="120" Width="200" Icon="./assets/añadir.ico" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+        Title="Añadir Nacionalidad" Height="120" Width="200" Icon="./assets/añadir.ico" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
     <StackPanel Orientation="Vertical">
         <TextBlock Text="Nacionalidad:" Margin="5,5,5,0"/>
         <TextBox Margin="5,0,5,5"/>
